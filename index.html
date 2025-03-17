@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <span>message：{{ message }}</span>
+      <input type="text" v-model="message" />
+      <span>user：{{ user.name }}</span>
+      <input type="text" v-model="user.name" />
+    </div>
+
+    <script src="vue.js"></script>
+    <script>
+      const vm = new Vue({
+        el: '#app',
+        data: {
+          message: 'hello',
+          user: {
+            name: 'xissium',
+          },
+        },
+      });
+      console.log(vm);
+    </script>
+  </body>
+</html>
